@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>davo richy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <section class="banner">
+ 	<img src="logo.png" class="logo">
+ 	<div class="banner-text">
+ 		<h1>Davo Website</h1>
+ 		<p>Welcome to my web page</p>
+ 		<div class="banner-btn">
+ 			<a href =""><span></span>Find out</a>
+ 			<a href=""><span></span>Read more</a>
+ 		</div>
+ 	</div>
+ </section>
+
+ <div id="sidenav">
+ 	<nav>
+ 		<ul>
+ 			<li><a href="index.html">Home</a></li>
+ 			<li><a href="#about">About</a></li>
+ 			<li><a href="#service">Features</a></li>
+ 			<li><a href="#footer">Contact</a></li>
+ 		</ul>
+ 	</nav>
+ </div>
+ <div id="menuBtn"><img src="menu.png" id="menu"></div>
+
+
+ <!-- about -->
+ <section id="about">
+ 	<div class="title-text">
+ 		<p>ABOUT</p>
+ 		<h1>Why work with us</h1>
+ 	</div>
+ 	<div class="about-box">
+ 		<div class="features">
+ 			<h1>Adeyemo David</h1>
+ 			<div class="about-des">
+ 				<div class="about-icon">
+ 					<i class="fa fa-shield"></i>
+ 				</div>
+ 				<div class="about-text"></div>
+ 				<p>I am a frontend developer and also a graphic designer and also a 3d animator. I am good at Html and css not that in javascript</p>
+ 			</div>
+ 			<h1>Olokun Emmanual</h1>
+ 			<div class="about-des">
+		       <div class="about-icon">
+ 					<i class="fa fa-check-square-o"></i>
+ 				</div>
+ 				<div class="about-text"></div>
+ 				<p>I am a frontend developer and also a graphic designer and also a 3d animator. I am good at Html and css not that in javascript</p>
+ 			</div>
+ 		</div>
+ 		<div class="features-img">
+            <img src="david.jpg">
+ 		</div>
+ 	</div>
+ </section>
+     <!-- service -->
+     <section id="service">
+     	<div class="title-text">
+ 		<p>Servcie</p>
+ 		<h1>We Provide better </h1>
+ 	</div>
+ 	<div class="service-box">
+ 		<div class="single-service"><img src="team-2.jpg">
+ 		 <div class="overlay"></div>
+ 		 <div class="service-des">
+ 		 	<h3>Web designing</h3>
+ 		 	<hr>
+ 		 	<p>We design a good website and this is a description of web design</p>
+ 		 </div>
+ 	    </div>
+ 		<div class="single-service"><img src="team-3.jpg">
+ 			<div class="overlay"></div>
+ 			<div class="service-des">
+ 		 	<h3>Web designing</h3>
+ 		 	<hr>
+ 		 	<p>We design a good website and this is a description of web design</p>
+ 		 </div>
+ 		</div>
+ 		<div class="single-service"><img src="team-4.jpg">
+ 			<div class="overlay"></div>
+ 			<div class="service-des">
+ 		 	<h3>Web designing</h3>
+ 		 	<hr>
+ 		 	<p>We design a good website and this is a description of web design</p>
+ 		 </div>
+ 		</div>
+ 		<div class="single-service"><img src="team-5.jpg">
+ 			<div class="overlay"></div>
+ 			<div class="service-des">
+ 		 	<h3>Web designing</h3>
+ 		 	<hr>
+ 		 	<p>We design a good website and this is a description of web design</p>
+ 		 </div>
+ 		</div>
+ 	</div>
+     </section>
+
+
+
+
+     <!-- footer -->
+     <section id="footer">
+     	<img src="gg.png" class="footer-img">
+      <div class="title-text">
+ 		<p>Contact</p>
+ 		<h1>Contact us today</h1>
+ 	  </div>
+ 		<div class="footer-row">
+ 			<div class="footer-left">
+ 				<h1>Opening hours</h1>
+ 				<p><img src="user.png" class="fa">Monday to friday - 9am to 9pm</p>
+ 				<p><p><img src="user.png" class="fa">Monday to friday - 9am to 9pm</p>
+ 			</div>
+ 			<div class="footer-right">
+ 				<h1>Get in touch</h1>
+ 				<p>emple@gmail.com<img src="envelope-white.png" class="fa"></p>
+ 				<p> No. 31 arademi  street Osun state<img src="location.png" class="fa"></p>
+ 				<p>+234 8033856303<img src="telephone-white.png" class="fa"></p>
+ 			</div>
+ 		</div>
+ 	      
+        <div class="social-media">
+        	<img src="fb.png" class="im" >
+            <img src="insta.png" class="im">
+            <img src="twitter.png" class="im">
+            <img src="youtube.png" class="im">
+            <p>Copyright Davo richy @2024 </p>
+        </div>
+        
+     </section>
+
+     <!-- script -->
+ <script>
+ 	var menuBtn = document.getElementById('menuBtn')
+ 	var sidenav = document.getElementById('sidenav')
+ 	var menu = document.getElementById('menu')
+     sidenav.style.right = "-250px"
+ 	menuBtn.onclick = function(){
+ 		if(sidenav.style.right == "-250px") {
+          sidenav.style.right = "0";
+          menu.src = "close.png" 
+ 		}
+ 		else{
+ 		   sidenav.style.right = "-250px"
+ 		     menu.src = "menu.png"	
+ 		}
+ 	}
+	var scroll = new SmoothScroll('a[href*="#"]', {
+		speed: 500,
+		speedAsDuration: true
+	});
+	
+ </script>
+</body>
+</html>
